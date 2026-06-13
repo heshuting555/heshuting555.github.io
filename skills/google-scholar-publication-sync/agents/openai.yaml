@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Scholar Publication Sync"
+  short_description: "Sync Scholar papers into publication pages"
+  default_prompt: "Use $google-scholar-publication-sync to fetch new Google Scholar papers, compare them with my local publications page, and update the site."
