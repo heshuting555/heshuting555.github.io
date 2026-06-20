@@ -1,4 +1,4 @@
-﻿# Agent Guidelines for Sigma Lab
+﻿# Agent Guidelines for SIGMA Lab
 
 A simple, clean, and responsive Jekyll theme for academics.
 

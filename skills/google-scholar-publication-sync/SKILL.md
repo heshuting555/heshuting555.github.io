@@ -1,6 +1,6 @@
 ---
 name: google-scholar-publication-sync
-description: Fetch recent Google Scholar profile publications, compare them with a local static/Jekyll personal website publications page, identify missing papers, and update publication/news HTML with manually supplied metadata such as display publication dates. Use when Codex needs to sync Shuting He/Sigma Lab-style personal website publication records from Google Scholar or audit new Scholar papers against local `publications/index.html`.
+description: Fetch recent Google Scholar profile publications, compare them with a local static/Jekyll personal website publications page, identify missing papers, and update publication/news HTML with manually supplied metadata such as display publication dates. Use when Codex needs to sync Shuting He/SIGMA Lab-style personal website publication records from Google Scholar or audit new Scholar papers against local `publications/index.html`.
 ---
 
 # Google Scholar Publication Sync
@@ -48,4 +48,4 @@ python skills/google-scholar-publication-sync/scripts/sync_scholar_publications.
 
 ## Helper
 
-Use `scripts/sync_scholar_publications.py` for fetching Scholar, comparing local titles, rendering entries, and applying updates to Sigma Lab-style static HTML pages.
+Use `scripts/sync_scholar_publications.py` for fetching Scholar, comparing local titles, rendering entries, and applying updates to SIGMA Lab-style static HTML pages.

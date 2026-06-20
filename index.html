@@ -16,7 +16,7 @@
 <title>
   
   
-    Sigma Lab
+    SIGMA Lab
   
 </title>
 <meta name="author" content="Shuting He">
@@ -98,7 +98,7 @@
           <img src="/assets/img/logo.png" alt="Logo" style="height: 30px; margin-right: 8px; vertical-align: middle;">
         
         
-          <span class="font-weight-bold" style="font-size: 1.2em; vertical-align: middle;">Sigma Lab</span>
+          <span class="font-weight-bold" style="font-size: 1.2em; vertical-align: middle;">SIGMA Lab</span>
         
       </a>
       <!-- Navbar Toggle -->
@@ -413,11 +413,145 @@
 </div>
 
     <!-- News -->
-    
-      <h2>
+    <style>
+      .news-heading {
+        display: flex;
+        align-items: center;
+        gap: 0.65rem;
+        margin-bottom: 0.85rem;
+      }
+
+      .news-heading a {
+        color: var(--global-text-color) !important;
+        font-weight: 700;
+      }
+
+      .news-heading::after {
+        content: "";
+        height: 2px;
+        flex: 1;
+        background: linear-gradient(90deg, #b509ac 0%, #0f9f9a 48%, rgba(15, 159, 154, 0) 100%);
+        border-radius: 999px;
+      }
+
+      .news-polished {
+        --news-accent: #b509ac;
+        --news-link: #007f89;
+        --news-date-bg: #fff1f6;
+        --news-date-text: #a01454;
+        --news-row-bg: #fbfcff;
+        --news-row-hover: #f5fbfa;
+        --news-border: rgba(181, 9, 172, 0.16);
+      }
+
+      html[data-theme="dark"] .news-polished {
+        --news-link: #4dd4cf;
+        --news-date-bg: rgba(181, 9, 172, 0.18);
+        --news-date-text: #f0a7dc;
+        --news-row-bg: rgba(255, 255, 255, 0.035);
+        --news-row-hover: rgba(77, 212, 207, 0.08);
+        --news-border: rgba(77, 212, 207, 0.24);
+      }
+
+      .news-polished .table-responsive {
+        max-height: 330px !important;
+        overflow-y: auto;
+        border-top: 1px solid var(--news-border);
+        border-bottom: 1px solid var(--news-border);
+        padding: 0.15rem 0;
+      }
+
+      .news-polished table {
+        border-collapse: separate;
+        border-spacing: 0 0.38rem;
+        margin-bottom: 0 !important;
+      }
+
+      .news-polished tr {
+        transition: transform 0.18s ease, background-color 0.18s ease;
+      }
+
+      .news-polished tr:hover {
+        transform: translateX(2px);
+      }
+
+      .news-polished th,
+      .news-polished td {
+        border: 0 !important;
+        line-height: 1.45;
+        padding: 0.5rem 0.75rem !important;
+        vertical-align: middle;
+      }
+
+      .news-polished th {
+        width: 7.25rem !important;
+        background: var(--news-date-bg);
+        border-left: 3px solid var(--news-accent) !important;
+        border-radius: 7px 0 0 7px;
+        color: var(--news-date-text);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .news-polished td {
+        background: var(--news-row-bg);
+        border-radius: 0 7px 7px 0;
+        color: var(--global-text-color);
+        font-size: 0.96rem;
+      }
+
+      .news-polished tr:hover th,
+      .news-polished tr:hover td {
+        background: var(--news-row-hover);
+      }
+
+      .news-polished td a {
+        border-bottom: 1px solid rgba(0, 127, 137, 0.28);
+        color: var(--news-link);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .news-polished td a:hover {
+        border-bottom-color: var(--news-accent);
+        color: var(--news-accent);
+        text-decoration: none;
+      }
+
+      .news-polished td strong {
+        color: #c026d3;
+        font-weight: 800;
+      }
+
+      html[data-theme="dark"] .news-polished td strong {
+        color: #f0a7dc;
+      }
+
+      .news-polished td span[style*="DeepPink"] {
+        color: #e11d48 !important;
+      }
+
+      @media (max-width: 575.98px) {
+        .news-polished th {
+          width: 5.7rem !important;
+          font-size: 0.72rem;
+          padding: 0.48rem 0.5rem !important;
+        }
+
+        .news-polished td {
+          font-size: 0.92rem;
+          padding: 0.48rem 0.55rem !important;
+        }
+      }
+    </style>
+
+      <h2 class="news-heading">
         <a style="color: inherit">News</a>
       </h2>
-      <div class="news">
+      <div class="news news-polished">
   
     
     <div class="table-responsive" style="max-height: 300px; overflow-y: auto;">
@@ -426,28 +560,33 @@
         
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">Jun 12, 2026</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">Jun 2026</th>
             <td style="padding: 2px 0;">
-              1 paper accepted to <strong>TPAMI</strong>.
+<a href="https://arxiv.org/abs/2508.09977" rel="external nofollow noopener" target="_blank">3D Gaussian Splatting Applications Survey</a> accepted to <strong>TPAMI</strong>.</td>
+          </tr>
+
+          <tr style="padding: 2px 0;">
+            <th scope="row" style="width: 20%; padding: 2px 0;">Jun 2026</th>
+            <td style="padding: 2px 0;">
+              1 paper accepted to <strong>ECCV</strong>.
+            </td>
+          </tr>
+          <tr style="padding: 2px 0;">
+            <th scope="row" style="width: 20%; padding: 2px 0;">Jun 2026</th>
+            <td style="padding: 2px 0;">
+
+                Serving as an <strong>Area Chair for WACV 2027</strong>.
+            </td>
+          </tr>
+          <tr style="padding: 2px 0;">
+            <th scope="row" style="width: 20%; padding: 2px 0;">May 2026</th>
+            <td style="padding: 2px 0;">
+              1 paper accepted to <strong>TIP</strong>, 1 paper accepted to <strong>MedIA</strong>.
             </td>
           </tr>
 
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">May 30, 2026</th>
-            <td style="padding: 2px 0;">
-              1 paper accepted to <strong>TIP</strong>.
-            </td>
-          </tr>
-
-          <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">May 30, 2026</th>
-            <td style="padding: 2px 0;">
-              1 paper accepted to <strong>MedIA</strong>.
-            </td>
-          </tr>
-
-          <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">May 30, 2026</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">May 2026</th>
             <td style="padding: 2px 0;">
               3 papers accepted to <strong>ICML 2026</strong>.
             </td>
@@ -458,13 +597,11 @@
             <td style="padding: 2px 0;">
               
                 Serving as an <strong>Area Chair for NeurIPS 2026</strong>.
-
-              
             </td>
           </tr>
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">Mar 30, 2026</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">Mar 2026</th>
             <td style="padding: 2px 0;">
               
                 1 papers accepted to <strong>TIFS</strong>.
@@ -474,7 +611,7 @@
           </tr>
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">Feb 30, 2026</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">Feb 2026</th>
             <td style="padding: 2px 0;">
               
                 1 papers accepted to <strong>CVPR 2026</strong>.
@@ -484,7 +621,7 @@
           </tr>
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">Jan 30, 2026</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">Jan 2026</th>
             <td style="padding: 2px 0;">
               
                 2 papers accepted to <strong>ICLR 2026</strong>.
@@ -494,7 +631,7 @@
           </tr>
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">Jan 30, 2026</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">Jan 2026</th>
             <td style="padding: 2px 0;">
               
                 1 paper accepted to <strong>IJCV</strong>.
@@ -514,7 +651,7 @@
           </tr>
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">Nov 30, 2025</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">Nov 2025</th>
             <td style="padding: 2px 0;">
               
                 1 paper accepted to <strong>AAAI 2026</strong>.
@@ -534,7 +671,7 @@
           </tr>
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">Sep 30, 2025</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">Sep 2025</th>
             <td style="padding: 2px 0;">
               
                 2 papers accepted to <strong>NeurIPS 2025</strong>.
@@ -554,7 +691,7 @@
           </tr>
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">Aug 30, 2025</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">Aug 2025</th>
             <td style="padding: 2px 0;">
               
                 1 paper accepted to <strong>TPAMI</strong>.
@@ -564,7 +701,7 @@
           </tr>
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">Jul 30, 2025</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">Jul 2025</th>
             <td style="padding: 2px 0;">
               
                 3 papers accepted to <strong>ACMMM 2025</strong>.
@@ -584,7 +721,7 @@
           </tr>
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">Jun 30, 2025</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">Jun 2025</th>
             <td style="padding: 2px 0;">
               
                 2 papers accepted to <strong>ICCV 2025</strong>, with one paper selected as <span style="color:DeepPink; font-weight:bold;">Highlight</span>.
@@ -594,7 +731,7 @@
           </tr>
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">May 30, 2025</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">May 2025</th>
             <td style="padding: 2px 0;">
               
                 1 paper accepted to <strong>ICML 2025</strong> as <span style="color:DeepPink; font-weight:bold;">Oral</span>.
@@ -604,7 +741,7 @@
           </tr>
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">Apr 30, 2025</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">Apr 2025</th>
             <td style="padding: 2px 0;">
               
                 1 paper accepted to <strong>TIFS</strong>.
@@ -614,7 +751,7 @@
           </tr>
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">Mar 30, 2025</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">Mar 2025</th>
             <td style="padding: 2px 0;">
               
                 1 paper accepted to <strong>SIGIR 2025</strong>.
@@ -624,7 +761,7 @@
           </tr>
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">Feb 30, 2025</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">Feb 2025</th>
             <td style="padding: 2px 0;">
               
                 1 paper accepted to <strong>CVPR 2025</strong>.
@@ -634,7 +771,7 @@
           </tr>
         
           <tr style="padding: 2px 0;">
-            <th scope="row" style="width: 20%; padding: 2px 0;">Jan 30, 2025</th>
+            <th scope="row" style="width: 20%; padding: 2px 0;">Jan 2025</th>
             <td style="padding: 2px 0;">
               
                 3 papers accepted to <strong>AAAI 2025</strong>.
@@ -660,6 +797,53 @@
       </h2>
       <div class="publications">
   <ol class="bibliography">
+<li>
+<div class="row">
+
+    <div class="col col-sm-2 abbr">
+
+
+          <abbr class="badge rounded w-100" style="background-color:#e91e63">
+
+              <a href="https://www.computer.org/csdl/journal/tp" rel="external nofollow noopener" target="_blank">TPAMI</a>
+
+          </abbr>
+
+
+    </div>
+
+
+  <!-- Entry bib key -->
+  <div id="he2026survey" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">A Survey on 3D Gaussian Splatting Applications: Segmentation, Editing, and Generation</div>
+    <!-- Author -->
+    <div class="author">
+
+
+      <u>Shuting He</u>, Peilin
+            Ji, Yitong
+            Yang, Changshuo
+            Wang, Jiayi
+            Ji, Yinglin
+            Wang, and Henghui
+            Ding
+
+    </div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>,  2026
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a href="https://arxiv.org/abs/2508.09977" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+    </div>
+
+  </div>
+</div>
+</li>
 <li>
 <div class="row">
   
@@ -688,8 +872,7 @@
       
       Henghui
             Ding, Chang
-            Liu, Shuting
-            He, Kaining
+            Liu, <u>Shuting He</u><sup>✉</sup>, Kaining
             Ying, Xudong
             Jiang, Chen Change
             Loy, and Yu-Gang
@@ -712,9 +895,6 @@
     
     <div class="periodical">
       <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>,  2025
-    </div>
-    <div class="periodical">
-      Corresponding author
     </div>
 
     <!-- Links/Buttons -->
@@ -792,8 +972,7 @@
       
 
       
-      Shuting
-            He, Guangquan
+      <u>Shuting He</u>, Guangquan
             Jie, Changshuo
             Wang, Yun
             Zhou, Shuming
@@ -898,8 +1077,7 @@
       
 
       
-      Shuting
-            He  and Henghui
+      <u>Shuting He</u> and Henghui
             Ding
       
     </div>
@@ -999,8 +1177,7 @@
       
 
       
-      Shuting
-            He  and Henghui
+      <u>Shuting He</u> and Henghui
             Ding
       
     </div>
@@ -1100,8 +1277,7 @@
       
 
       
-      Shuting
-            He, Henghui
+      <u>Shuting He</u>, Henghui
             Ding, and Wei
             Jiang
       
@@ -1202,8 +1378,7 @@
       
 
       
-      Shuting
-            He, Hao
+      <u>Shuting He</u>, Hao
             Luo, Pichao
             Wang, Fan
             Wang, Hao

@@ -25,11 +25,11 @@ This guide helps you add website analytics to track visitor statistics and behav
 
 ## Overview
 
-Analytics help you understand your website visitors: where they come from, which pages they visit, and how they interact with your content. Sigma Lab supports several analytics providers that you can enable in `_config.yml`.
+Analytics help you understand your website visitors: where they come from, which pages they visit, and how they interact with your content. SIGMA Lab supports several analytics providers that you can enable in `_config.yml`.
 
 ## Supported Analytics Services
 
-Currently implemented in Sigma Lab:
+Currently implemented in SIGMA Lab:
 
 - **Google Analytics** 鈥?Free, feature-rich, but collects user data
 - **Pirsch Analytics** 鈥?GDPR-compliant, free tier available, European servers

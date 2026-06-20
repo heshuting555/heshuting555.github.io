@@ -1,6 +1,6 @@
 ﻿# SEO Best Practices Guide
 
-This guide helps you optimize your Sigma Lab website for search engines so your research and work are discoverable.
+This guide helps you optimize your SIGMA Lab website for search engines so your research and work are discoverable.
 
 <!--ts-->
 
@@ -11,10 +11,10 @@ This guide helps you optimize your Sigma Lab website for search engines so your 
     - [Site URL and Metadata](#site-url-and-metadata)
   - [Enabling Open Graph (Social Media Previews)](#enabling-open-graph-social-media-previews)
     - [What is Open Graph?](#what-is-open-graph)
-    - [Enable in Sigma Lab](#enable-in-Sigma Lab)
+    - [Enable in SIGMA Lab](#enable-in-SIGMA Lab)
   - [Schema.org Markup](#schemaorg-markup)
     - [What is Schema.org?](#what-is-schemaorg)
-    - [Enable in Sigma Lab](#enable-in-Sigma Lab-1)
+    - [Enable in SIGMA Lab](#enable-in-SIGMA Lab-1)
     - [What Gets Marked Up](#what-gets-marked-up)
   - [Search Console Setup](#search-console-setup)
     - [Google Search Console](#google-search-console)
@@ -44,7 +44,7 @@ SEO (Search Engine Optimization) makes your website discoverable on Google, Bing
 - Your publications rank higher
 - More citations and collaborations
 
-Sigma Lab includes SEO basics, but you can optimize further.
+SIGMA Lab includes SEO basics, but you can optimize further.
 
 ---
 
@@ -52,7 +52,7 @@ Sigma Lab includes SEO basics, but you can optimize further.
 
 ### Sitemap and Robots
 
-Sigma Lab auto-generates a `sitemap.xml` and `robots.txt` for you. These tell search engines what pages exist.
+SIGMA Lab auto-generates a `sitemap.xml` and `robots.txt` for you. These tell search engines what pages exist.
 
 **Verify they exist:**
 
@@ -65,7 +65,7 @@ If they're missing:
 2. Rebuild: `bundle exec jekyll build`
 3. Check `_site/` directory has both files
 
-**No configuration needed** 鈥?Sigma Lab handles this automatically.
+**No configuration needed** 鈥?SIGMA Lab handles this automatically.
 
 ---
 
@@ -107,7 +107,7 @@ When someone shares your page on Twitter, Facebook, LinkedIn, etc., Open Graph c
 - Custom description
 - Professional preview
 
-### Enable in Sigma Lab
+### Enable in SIGMA Lab
 
 Open Graph is disabled by default. To enable:
 
@@ -161,7 +161,7 @@ Benefits:
 - Better knowledge graph information
 - Schema validation helps Google understand your site
 
-### Enable in Sigma Lab
+### Enable in SIGMA Lab
 
 Enable in `_config.yml`:
 
@@ -169,7 +169,7 @@ Enable in `_config.yml`:
 serve_schema_org: true # Change from false to true
 ```
 
-That's it! Sigma Lab automatically marks up:
+That's it! SIGMA Lab automatically marks up:
 
 - **Author info** (Person schema with name, URL, photo)
 - **Blog posts** (BlogPosting schema with date, title, description)
@@ -418,7 +418,7 @@ See my [publication on climate AI](./publications/) or my [blog post on neural n
 
 ## RSS Feed for Discovery
 
-Sigma Lab auto-generates an RSS feed at `/feed.xml`.
+SIGMA Lab auto-generates an RSS feed at `/feed.xml`.
 
 **Why RSS matters:**
 
@@ -452,14 +452,14 @@ Search engines favor fast, mobile-friendly sites.
 - Use [Google PageSpeed Insights](https://pagespeed.web.dev/)
 - Enter your site URL
 - Review recommendations
-- Sigma Lab already optimizes for performance, but you can improve further:
+- SIGMA Lab already optimizes for performance, but you can improve further:
   - Compress images
   - Minimize CSS/JS (enabled by default)
   - Use lazy loading (already enabled)
 
 **Mobile optimization:**
 
-- Sigma Lab is responsive by default
+- SIGMA Lab is responsive by default
 - Test on phones/tablets
 - Ensure buttons are large enough to tap
 - Check readability on small screens

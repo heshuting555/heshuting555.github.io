@@ -1,6 +1,6 @@
 ﻿# Quick Start Guide
 
-**Get your Sigma Lab site running in 5 minutes.** This guide is for users who just want a working website quickly without deep customization.
+**Get your SIGMA Lab site running in 5 minutes.** This guide is for users who just want a working website quickly without deep customization.
 
 > **Video Tutorial:** Watch a walkthrough of these steps [here](assets/video/tutorial_al_folio.mp4)
 
@@ -21,16 +21,16 @@
 
 ## Step 1: Create Your Repository (1 min)
 
-**鈿狅笍 Important:** Use the **"Use this template"** button, NOT the fork button. This ensures your site is independent and you won't accidentally submit your personal changes back to the Sigma Lab project.
+**鈿狅笍 Important:** Use the **"Use this template"** button, NOT the fork button. This ensures your site is independent and you won't accidentally submit your personal changes back to the SIGMA Lab project.
 
-1. Go to the [Sigma Lab repository](https://github.com/Sigma-Lab/sigma_lab)
+1. Go to the [SIGMA Lab repository](https://github.com/Sigma-Lab/sigma_lab)
 2. Click the green **"Use this template"** button (top right), then select **"Create a new repository"**
 3. Name your repository:
    - **Personal/Organization site (if you want your site to be at `username.github.io`):** `username.github.io` (replace `username` with your GitHub username)
    - **Project site (if you want your site to be at `username.github.io/project-name`):** Any name (e.g., `my-research-website`)
 4. Click **"Create repository from template"**
 
-**Already forked by mistake?** No problem. Your fork will work fine鈥攋ust be careful when making changes. Create a new branch for your updates (e.g., `git checkout -b my-site-updates`) and make sure you push to **your own repository**, not the main Sigma Lab project.
+**Already forked by mistake?** No problem. Your fork will work fine鈥攋ust be careful when making changes. Create a new branch for your updates (e.g., `git checkout -b my-site-updates`) and make sure you push to **your own repository**, not the main SIGMA Lab project.
 
 ## Step 2: Configure Deployment (1 min)
 
@@ -61,7 +61,7 @@
 6. Wait for the "pages-build-deployment" workflow to complete (~45 seconds)
 7. Visit `https://your-username.github.io` in your browser
 
-**That's it!** Your site is live. You now have a working Sigma Lab website.
+**That's it!** Your site is live. You now have a working SIGMA Lab website.
 
 ---
 
